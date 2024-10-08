@@ -45,5 +45,8 @@ ASSIGNMENT_OPERATOR: ':=';
 
 
 //--- PARSER: ---
-stylesheet: EOF;
+//stylesheet: EOF;
+stylesheet: stylerule;
+stylerule: selector OPEN_BRACE declaration
+
 
